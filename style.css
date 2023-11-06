@@ -25,7 +25,6 @@ body{
 
 
 .heading{
-    margin-top: 2rem;
     font-weight: 200;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 5px 3px 2px rgba(0, 0, 0, .3);
@@ -34,7 +33,10 @@ body{
 .jokes{
     margin-top: 2rem;
     font-size: 25px;
-    font-weight: 500px;
+    font-weight: 500px;    
+}
+img{
+    height: 8rem;
 }
 .btn{
     margin-top: 8rem;
