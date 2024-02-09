@@ -58,3 +58,9 @@ img{
     transition: all 300ms ease;
 }
 
+@media (max-width: 750px) {
+    .btn{
+        margin-top: 8rem;
+        width: 150px;
+    }
+}
