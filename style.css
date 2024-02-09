@@ -22,6 +22,8 @@ body{
     height: auto;
     padding-bottom: 100px;
 }
+
+
 .heading{
     font-weight: 200;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -29,10 +31,12 @@ body{
     letter-spacing: 2px;
 
 }
-.jokes{
+.jokediv{
     margin-top: 2rem;
     font-size: 25px;
-    font-weight: 500px;    
+    font-weight: 500px;
+    max-width: auto;    
+    height: 80px;
 }
 img{
     height: 8rem;
