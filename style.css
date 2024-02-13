@@ -1,10 +1,12 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: linear-gradient( to left bottom, lightblue, lightpink, lightblue);
+.main{
+    background: linear-gradient(to left, lightblue, lightpink, lightblue);
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -12,45 +14,44 @@ body{
     justify-content: center;
     font-family: monospace;
 }
-.main{
-    background: rgba(255, 255, 255, .3);
-    width: 70%;
-    border-radius: .5rem;
+.container{
+    padding: 10px;
     text-align: center;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, .3);
-    color: darkgreen;
-    height: auto;
-    padding-bottom: 100px;
+    box-shadow: 4px 4px 10px 2px red;
+    width: 85%;
+    border-radius: 10px;
 }
-
-
+img{
+    height: 8rem;
+}
 .heading{
     font-weight: 200;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 5px 3px 2px rgba(0, 0, 0, .3);
     letter-spacing: 2px;
-
 }
 .jokediv{
-    margin-top: 2rem;
-    font-size: 25px;
-    font-weight: 500px;
-    max-width: auto;    
-    height: 80px;
+    max-width: 100%;
+    margin: 10px 0 10px 10px;
+    padding: 20px;
 }
-img{
-    height: 8rem;
+.jokediv p{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: green;
 }
 .btn{
-    margin-top: 8rem;
+    margin: 10px;
     padding: 10px;
     border: none;
-    background: rgba(255, 255, 255, .3) ;
+    background: rgba(0, 0, 0, 0.6) ;
     font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
     width: 250px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
 }
 .btn:hover{
@@ -60,7 +61,6 @@ img{
 
 @media (max-width: 750px) {
     .btn{
-        margin-top: 8rem;
         width: 150px;
-    }
+        }
 }
