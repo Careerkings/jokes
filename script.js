@@ -7,27 +7,29 @@ const option = {
     }
 }
 
-
-
-
 const jokesEl = document.getElementById('jokes');
 const btnEl = document.getElementById('btn');
 
 
 const getJokes = async () => { 
-    
-
+       jokesEl.innerText = '...loading';
+       btnEl.disabled = true;
        fetch(apiUrl, option).then(res => res.json()).then(data => { 
         console.log(data[0].joke)
         jokesEl.textContent = data[0].joke;
+        btnEl.disabled = false;
 
-       }).catch(error => {
-        jokesEl.textContent = 'joke not available'
+
+       }).catch(() => {
+        jokesEl.innerText = '...loading';
+        jokesEl.textContent = 'joke is not available';
 
        })
 }
 
 btnEl.addEventListener('click', getJokes)
+
+
 
 
 
